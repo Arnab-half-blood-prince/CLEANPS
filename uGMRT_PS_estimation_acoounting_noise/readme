@@ -5,7 +5,9 @@ This helps to restrict baseline migration and also maintain signal ergodicity.
 The data cotains noise too and the estimation of power spectrum accounted the positive noise bias term carefully. The resultant power spectrum
 is free of noise bias. 
 
-The relevant functions are mentioned in the functions.py file.
-The estimation of PS and storing into pkl files are given in the clean_ps_uGMRT_data.py file. 
+# The relevant functions are mentioned in the functions.py file.
+# The estimation of PS and storing into pkl files are given in the clean_ps_uGMRT_data.py file. 
+# The CLEAN of all baseline in parallel cores is mentioned in clean_baseline_uGMRT.py file. It will read data and flag column, use 1D CLEAN algorithm in delay space 
+for different baselines in parallel and store it in pkl files.
 
-The daa is huge and I am unable to upload here. But one can test this with simulation or real visibility data set. 
+The data is huge and I am unable to upload here. But one can test this with simulation or real visibility data set. 
