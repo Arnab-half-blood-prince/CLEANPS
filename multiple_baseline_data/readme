@@ -1,1 +1,16 @@
 
+The clean_ps_parallel.py file will load the data (fits format or simple binary file), choose random channels and flag those, then apply CLEAN (1D) algorithm 
+ parallely on baselines (choose the number of cores avaliable) and store the CLEAN delay spectrum in pkl files.
+
+I have tested this with simulated SKA-1 low data set with HI_Cube + point source as the sky model. 
+
+The data set is huge, so unable to upload.
+
+However, one can simulate any telescope array with a sky model using CASA/OSKAR (or any other simulator) and do this exercise.
+
+The fits data can be loaded and stored using pyuvdata tool. 
+
+All the relevant functions to do this task is situated in the functions.py. 
+
+Although the data set may be huge, but given the number of cores available one can run this CLEAN task parallely. 
+
