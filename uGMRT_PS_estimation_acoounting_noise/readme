@@ -1,1 +1,9 @@
 
+I have estimated the power spectrum after applying 1D CLEAN algorithm to delay space to account for missing channel data.
+This is done for the real data set of uGMRT at 310 MHz (z = 3.58). I choose to estimate the power spectrum for a small 8 MHz subset.
+This helps to restrict baseline migration and also maintin ergodicity. 
+The data cotains noise too and the estimation of power spectrum accounted the positive noise bias term carefully. The resultant power spectrum
+is free of noise bias. 
+
+The relevant functions are mentioned in the functions.py file.
+The estimation of PS and storing into pkl files are given in the clean_ps_uGMRT_data.py file. 
