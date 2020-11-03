@@ -2,6 +2,9 @@ This is a small example on how flagging affects estimation of HI 21 cm power spe
 
 Here the data folder contains the simulation of a single baseline data os SKA-1 low, with the sky model- HI cube + point sources, at z=9
 
+The data does not contain noise, hence simple squaring the visibility will give Power Spectrum (after propoer scaling). 
+The entire methodology is based on Parsons.et.al 2012,2014. 
+
 All the relevant functions are defined in functions.py
 
 If one follow the clean_ps_single_baseline.py file and run this on ipython/python or Jupyter notebook, then it will work and all the relevant images will be generated.
