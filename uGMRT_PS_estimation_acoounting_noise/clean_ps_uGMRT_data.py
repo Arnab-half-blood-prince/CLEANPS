@@ -1,4 +1,9 @@
-## First run function.py, then start working in this py file #### 
+from functions import *
+
+## set the cosmolog ##
+from astropy.cosmology import Planck18_arXiv_v2 as Planck18
+default_cosmology.set(Planck18)
+
 
 
 ## Reading/ loading the uvdata ## 
